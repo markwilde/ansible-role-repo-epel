@@ -1,0 +1,4 @@
+---
+- name: redhat | install epel repository configuration
+  yum: name={{yum_package}} state=installed
+  when: ansible_os_family == 'RedHat'
